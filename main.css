@@ -119,7 +119,8 @@ body {
 
 
 #Introduction {
-	background-image: url(backround.jpeg); 
+
+    background-image: url(backround.jpeg); 
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;

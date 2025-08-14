@@ -102,8 +102,17 @@ body {
 }
 .image img {
     border-radius: 100%; /* Make the image circular */
+    width: 500px; /* Set a fixed width */
 
 
+}
+
+.image1 {
+   /* display: flex;*/
+    height: 250px; /* Maintain aspect ratio */
+    justify-content: center;
+    align-items: center;
+    
 }
 	
 .image2 {
@@ -112,11 +121,44 @@ body {
     justify-content: center;
     
 }
+
+
 .intro h1{
 	text-align: center;
 
 }
 
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next-btn {
+  background-color: #04AA6D;
+  color: white;
+  position: center;
+  height: 20px;
+}
+
+.next-btn:hover {
+  background-color: #155e19;
+}
+
+#next-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #04AA6D;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.round {
+  border-radius: 50%;
+}
 
 #Introduction {
 
@@ -147,7 +189,7 @@ body {
 }
 #info .content p {
      margin-bottom: 15px;
-     margin-left: 40px;
+     margin-left: 10px;
 }
 
 
@@ -168,7 +210,13 @@ body {
 #Experience h7{
     font-weight: bold;
     padding: 30px;
-}
+
+    }
+#Experience .Ex11{
+    margin: 20px;
+    margin-left: 50px;
+} 
+
 #Experience .Ex1{
     margin: 20px;
     margin-left: 50px;
@@ -364,7 +412,7 @@ ul li {
 
 #stayintouch{
     position: center;
-    padding: 15px;
+    padding: 25px;
 }
 .social-icons a {
     font-size: 2rem;
@@ -376,6 +424,9 @@ ul li {
     border-radius: 100%;
     text-align: center;
     color: white;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 

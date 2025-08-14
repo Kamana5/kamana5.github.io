@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,36 +6,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <style>
-    body {
-        background-image: url("backround.jpeg");
-        background-size: cover; 
-        background-position: center; 
-        background-repeat: no-repeat;
-    }
+body {
+    background-image: url("static/backround.jpg");
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: contain;
+    background-attachment: scroll;
+}
+
 </style>
     
 
     <main>
-		<section id = "Name">
-			<h1>KAMANA CHAPAGAIN</h1>
-		</section>
-		<header>
-        <nav>
-            <div class="menu-icon" id="menu-icon">
-            </div>
-            <ul id="menu">
-                <li><a href="#Introduction">INTRODUCTION</a></li>
-                <li><a href="#Experience">EXPERIENCE</a></li>
-                <li><a href="#Skills">SKILLS</a></li>
-                <li><a href="#Projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
-    </header>
+        <body>
+            <div id="header-container"></div>
+             
     
         <section id="Introduction">
             <span class="image">
-                <img src="pic01.jpg" alt="Profile Picture" />
+                <img src="static/KamanaChapagain.jpg" alt="Profile Picture" />
             </span>
             <div class="intro">
                 <h1>Hello, I’m Kamana!</h1>
@@ -50,14 +38,20 @@
             <h2>Introduction:</h2>
             <div class="content">
                 <p> &#x2022; Obtaining a Bachelor's in Computer Science at Queen's University<br></p>
+                <p> &#x2022; Graduating with a 14 month Professional Internship Experience<br></p>
                 <p>&#x2022; Consecutively on the Dean's Honours List throughout my academic journey<br></p>
-                <p>&#x2022; Additional focus in Cybersecurity</p>
                 <p>&#x2022; Passionate about creating technology that is both impactful and user-friend</p>
             </div>
         </section>
 
         <section id="Experience">
             <h2>Experience:</h2>
+
+             <h7>Software Developer Intern @ Centre for Advanced Computing at Queen’s University </h7>
+            <div class="Ex11">
+                • Developed full-stack web and mobile applications using technologies like ReactJS, NextJS, Node, and Django REST Framework in collaboration with startups and municipal partners.
+            <br>• Designed interactive dashboards for health-focused web applications using data visualization libraries and RESTful APIs, while leveraging cloud platforms and machine learning models to support predictive health insights
+            </div>
 
             <h7>Undergraduate Teaching Assistant @ Queen's University </h7>
             <div class="Ex1">
@@ -77,22 +71,17 @@
             <div class="Ex3">
                 •Conceptualized, planned, and executed major computing events, enhancing community engagement and collaboration within the Computing Community at Queen’s University.
                 <br>• Ensured seamless setup and functionality of computer hardware and software during Queen’s hackathons.
-                <br>• Led a team, coordinating responsibilities and providing guidance to ensure successful event executions.                <br>•  Maintained and managed the integrity of company data through regular updates and data entry
+                <br>• Led a team, coordinating responsibilities and providing guidance to ensure successful event executions.                
+                <br>•  Maintained and managed the integrity of company data through regular updates and data entry
             </div>
 
             <h7>Database Administrator @ Summerhill Market: </h7>
             <div class="Ex4">
                     • Produced comprehensive and insightful reports utilizing the suite of Microsoft 365 applications
                 <br>•  Maintained and managed the integrity of company data through regular updates and data entry
-                <br>•  Contributed to the enhancement of the Summerhill Market e-commerce platform through front-end development 
-                    support
+                <br>•  Contributed to the enhancement of the Summerhill Market e-commerce platform through front-end development support
             </div>
-            
-            <h7>Socials Planner @ Compsa Queen's University:</h7>
-            <div class="Ex5">
-                • Organized and executed social events for the computing society at Queens University
-                <br>• Conceptualize, plan, and lead engaging activities and events, fostering a sense of within the Computing team
-            </div>
+        
 
             <h7>Science Program Instructor @ City of Toronto:</h7>
             <div class="Ex6">
@@ -105,14 +94,43 @@
         <section id="Skills">
             <h2>Skills:</h2>
 			<div class="skills-list">
-				<p><strong>Programming Languages and Frameworks:</strong> Python (Flask, Django), Java, JavaScript, C, HTML, CSS, Bash
+				<p><strong>Programming Languages and Frameworks:</strong> Python (Flask, Django), Java, JavaScript, C, HTML, CSS, Bash, PHP, SQL, Typescript
 
-				<p><strong>Tools:</strong> Git/GitHub, Linux, Figma, Visual Studio Code, Eclipse, MS Office Suite
+				<p><strong>Other tools:</strong> Git/GitHub, Linux, Figma, Visual Studio Code, Eclipse, MongoDB
 			</div>
         </section>
 
         <section id="Projects">
             <h2>Projects:</h2>
+            <div class="project-item">
+                <h3>Munch Match</h3>
+                    • Built a full-stack group decision-making web app using React, Next.js, tRPC, Node.js, and SQLite to help users vote on nearby restaurants or activities.
+                <br>• Integrated Google Maps API to fetch personalized location-based options and implemented real-time group voting logic with session codes.
+                <br>• Designed a clean, responsive UI using Tailwind CSS and managed data with Prisma for lightweight, efficient storage.
+            <div class="image2">
+                <img src="static/MMLanding_page.png" alt="Project" />
+                <img src="static/MatchFound.png" alt="Project" style="display: none;" />
+
+            </div>
+            <button class="next-btn">Next</button>
+
+            </div>
+            <div class="project-item">
+                <h3>Emotion Quest</h3>
+                    • Designed an interactive educational web app to help children with ASD and alexithymia learn to recognize and practice facial expressions using real-time feedback.
+                <br>• Implemented DeepFace to analyze user-submitted facial expressions and compare them to target emotions like happy, sad, angry, and surprised.
+                <br>• Built a kid-friendly interface with HTML, CSS, and JavaScript, and developed backend logic in Python (Flask) to handle image processing and AI integration.
+            </div>
+            <div class="image2">
+                <img src="static/EQlandingPage.jpg" alt="Project" />
+                <img src="static/practiceEmotion.jpg" alt="Project" style="display: none;"/>
+                <img src="static/Learn.jpg" alt="Project" style="display: none;"/>
+            </div>
+            <button class="next-btn">Next</button>
+            </div>
+
+            
+
             <div class="project-item">
                 <h3>Legacy Recipes:</h3>
                     • Developed an end-to-end web application using Python (Django) and HTML to connect individuals through food.
@@ -120,8 +138,9 @@
                 <br>• Implemented multi-user registration, login systems, and an admin interface for streamlined management.
             </div>
             <span class="image2">
-                <img src="HomePageProject.png" alt="Project" />
+                <img src="static/HomePageProject.png" alt="Project" />
             </span>
+            
             
         </section>
   
@@ -142,22 +161,9 @@
 				<button type="submit">Send</button>
 			</form>
         </section>
-		<section id="stayintouch">
-			<h3>Leaving Already? Lets stay in touch!</h3>
-			<ul class="social-icons">
-				<li><a class="linkedin" aria-label="LinkedIn" href="https://www.linkedin.com/in/kamanachapagain" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-				<li><a class="github" aria-label="GitHub" href="https://github.com/Kamana5" target="_blank"><i class="fab fa-github"></i></a></li>
-				<li><a class="email" aria-label="Email" href="mailto:kamana0123@gmail.com"><i class="fas fa-envelope"></i></a></li>
-			</ul>
-		</section>
+        <div id="footer-container"></div>
 
-    </main>
-    
 
-    <footer>
-        <p>&copy; 2024 Kamana Chapagain. All rights reserved.</p>
-    </footer>
-
-    <script src="main.js"></script> <!-- Link to external JavaScript file -->
+    <script src="main.js"></script> 
 </body>
 </html>

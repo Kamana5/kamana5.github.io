@@ -69,3 +69,19 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("footer-container").innerHTML = data;
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("pages/experience.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("experience-container").innerHTML = data;
+        })  
+});
+
+document.addEventListener("DOMContentLoaded",() => {
+    fetch("pages/skills.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("skills-container").innerHTML = data;
+        })
+    });

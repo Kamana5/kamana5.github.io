@@ -50,16 +50,11 @@ document.querySelectorAll('.next-btn').forEach(button => {
 // Fetching the different pages for the portfolio section
 document.addEventListener("DOMContentLoaded", () => {
   fetch("components/header.html")
-    .then(res => {
-      if (!res.ok) throw new Error("Header not found");
-      return res.text();
-    })
+    .then(res =>  res.text())
     .then(data => {
       document.getElementById("header-container").innerHTML = data;
     })
-    .catch(err => {
-      console.error("Error loading header:", err);
-    });
+
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -85,3 +80,20 @@ document.addEventListener("DOMContentLoaded",() => {
             document.getElementById("skills-container").innerHTML = data;
         })
     });
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("pages/projects.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("projects-container").innerHTML = data;
+        })
+
+})
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("pages/contacts.html")
+        .then(res => res.text())
+        .then(data => {
+            document.getElementById("contacts-container").innerHTML = data;
+        })
+
+})

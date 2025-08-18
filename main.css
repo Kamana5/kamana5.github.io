@@ -250,6 +250,67 @@ body {
     margin-left: 50px;
 
 }
+#Experience.timeline::before {
+  content: "";
+  position: absolute;
+  left: 78px;          
+  top: 330px;
+  bottom: -350px;
+  width: 2px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.tl-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 16px;
+  padding: 1rem 0 1.25rem;
+}
+
+
+.tl-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+  display: grid;
+  place-items: center;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+.tl-logo img { width: 100%; height: 100%; object-fit: cover; }
+
+.tl-content {
+  background: rgba(255,255,255,0.9);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+}
+.tl-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1rem;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: .35rem;
+}
+.tl-title { font-size: 1.05rem; font-weight: 700; }
+.tl-meta  { font-size: .9rem; opacity: .8; }
+
+.tl-points {
+  margin: .5rem 0 0;
+  padding-left: 1.25rem;
+  line-height: 1.5;
+  list-style: disc outside;
+  display: block;
+}
+.tl-points li { display: list-item; }
+.tl-points li + li { margin-top: .35rem; }
+
+
 #Skills {
     background-color: hsl(211, 77%, 93%); /* Background color for the Skills section */
     padding: 20px; /* Add some padding to the Skills section */
@@ -422,14 +483,15 @@ ul li {
     display: inline-block;
     line-height: 44px;
     background-color: #09011b;
-    width: 44px;
-    height: 44px;
+    width: 46px;
+    height: 46px;
     border-radius: 100%;
     text-align: center;
     color: white;
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 5px;
     padding-right: 5px;
+
 }
 
 
